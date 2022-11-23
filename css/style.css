@@ -1,0 +1,433 @@
+@import url(https://fonts.googleapis.com/css?family=Alexandria:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Serif:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+:root {
+    --main-clr: cyan;
+
+    --main-white: #f3f3f3;
+
+    --bg-clr: #1c1c1e;
+
+    --header-bg: #222222;
+
+    --main-shadow: var(--main-clr) 0 0 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    /* line-height: 0; */
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+
+
+    font-family: 'Alexandria';
+    transition: all .25s ease-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-clr);
+}
+
+.logo a{
+    font-size: 34px;
+    font-weight: 900;
+    color: var(--main-white);
+}
+
+.logo a:hover{
+    text-shadow: 3px 3px 0 var(--main-clr);
+}
+
+header {
+    z-index: 3;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 80px;
+    background-color: var(--header-bg);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1240px;
+    padding: 0 1.5rem;
+}
+
+header .container .nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn {
+    display: none;
+    line-height: 0;
+    font-size: 42px;
+    color: var(--main-white);
+}
+
+header .container .nav ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+header .container ul li a {
+    font-weight: 600;
+    color: var(--main-white);
+    text-transform: uppercase;
+}
+
+header .container ul li a:hover {
+    text-shadow: var(--main-shadow);
+    color: var(--main-clr);
+}
+
+#check {
+    display: none;
+}
+
+#contact-btn{
+    font-size: 16px;
+    font-weight: 600;
+    padding: .7rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: var(--header-bg);
+    background-color: var(--main-clr);
+}
+#download-btn{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: #1b1b1b;
+    background-color: var(--main-clr);
+}
+
+#contact-btn:hover {
+    box-shadow: var(--main-shadow);
+    background-color: var(--main-clr);
+}
+#download-btn:hover {
+    box-shadow: var(--main-shadow);
+    background-color: var(--main-clr);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+main .container {
+    width: 1240px;
+    padding: 0 1.5rem;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.first-child, .second-child {
+    height: 400px;
+    width: 50%;
+}
+.first-child .inner {
+    /* width: 70%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--main-white);
+    background-color: transparent;
+    text-align: center;
+}
+
+.first-child .inner .text > * {
+    text-align: start;
+}
+
+#greet{
+    font-size: 22px;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+#name {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+#name span {
+    color: var(--main-clr);
+    text-shadow: var(--main-shadow);
+}
+
+#desc {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+#desc span {
+    font-weight: 600;
+    color: #1b1b1b;
+    padding: .2rem .5rem;
+    background-color: #f3f3f3;
+}
+#desc span {
+    box-shadow: 3px 3px 0 var(--main-clr);
+}
+
+.first-child .inner .row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-child .inner .row button {
+    margin-bottom: 1rem;
+}
+
+.second-child .box-inner {
+    height: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.second-child .box-inner .hai {
+    /* width: 70%; */
+    margin-top: 2.25rem;
+    width: 300px;
+}
+
+.about-me{
+    width: 100%;
+    display: flex;
+    background-color: var(--header-bg);
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact{
+    width: 100%;
+    display: flex;
+    background-color: var(--header-bg);
+    justify-content: center;
+    padding: 2rem;
+}
+
+.about-me .container {
+    width: 1240px;
+}
+
+.about-me .container .text .title,.contact .container .text .title{
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-white);
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.about-me .container .text .title::after,.contact .container .text .title::after {
+    content: '';
+    height: .5rem;
+    width: 10.5rem;
+    border-radius: 2rem;
+    background-color: var(--main-clr);
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    right: 0;
+    margin: 0 auto;
+    box-shadow: var(--main-shadow);
+}
+
+.about-me .container .text p, .contact .container .text p{
+    font-size: 20px;
+    color: #a8a8a8;
+    line-height: 1.8;
+    text-align: left;
+    padding: 1.5rem 5rem;
+}
+
+.contact .container .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    color: #f3f3f3;
+    font-size: 2.5rem;
+    
+}
+.contact .container .row a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: var(--main-white);
+}
+.contact .container .row a:hover {
+    cursor: pointer;
+    color: #1b1b1b;
+    background-color: var(--main-white);
+    box-shadow: 5px 5px 0 var(--main-clr);
+}
+
+.go-top {
+    margin-top: 3rem;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 800;
+    width: 100%;
+}
+.go-top a {
+    padding: 1rem 2rem;
+    color: #222222;
+    border-radius: 2rem;
+    background-color: var(--main-clr);
+}
+
+.go-top i {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+/* FOR RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    .logo a{
+        font-size: 16px;
+    }
+    .nav-btn {
+        display: block;
+    }
+    .nav-btn:hover {
+        cursor: pointer;
+        color: var(--main-clr);
+    }
+    
+    .main-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .first-child{
+        margin-top: 3rem;
+        height: 350px;
+        width: 100%;
+    }
+
+    .first-child .inner{
+        width: 100%;
+        height: 80%;
+    }
+
+    .second-child .box-inner {
+        height: 70%;
+    }
+    .second-child .box-inner .hai{
+        margin-top: 2rem;
+        min-width: 280px;
+    }
+
+    .first-child .inner .text #greet,#name,#desc{
+        text-align: center;
+    }
+    .about-me .container .text p, .contact .container .text p {
+        padding: 1.5rem 2rem;
+        text-align: left;
+    }
+    header .container .nav ul{
+        padding: 50px;
+        background-color: var(--header-bg);
+    }
+    header .container .nav ul {
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        right: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: all .5s ease-in-out;
+    }
+    header .container .nav ul li {
+        margin-bottom: 2rem;
+        font-size: 24px;
+    }
+
+    #contact-btn {
+        transform: scale(.8);
+        margin-right: .5rem;
+    }
+    #download-btn{
+        margin-top: 2rem;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .about-me, .contact{
+        padding: 1rem;
+    }
+    .about-me .container .text p,.contact .container .text p {
+        padding: 1rem;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .about-me .container .text .title,.contact .container .text .title{
+        font-size: 28px;
+        margin-top: 2rem;
+    }
+
+    .contact .container .row {
+        font-size: 24px;
+        gap: 1.5rem;
+    }
+
+    .contact .container .row a {
+        width: 40px;
+        height: 40px;
+    }
+    .contact {
+        padding-bottom: 5rem;
+    }
+}
